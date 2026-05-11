@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f7f9fc;
+  --bg-strong: #e9f0ff;
+  --text: #0f1b39;
+  --card: #ffffff;
+  --line: #d7e2ff;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: linear-gradient(135deg, #edf3ff 0%, #f9fbff 55%, #e8f0ff 100%);
+  background-attachment: fixed;
+  font-family: "Manrope", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Sora", sans-serif;
+}
+
+.panel {
+  @apply rounded-2xl border border-brand-100 bg-white shadow-soft;
+}
+
+.grid-bg {
+  background-size: 22px 22px;
+  background-image: radial-gradient(circle at 1px 1px, rgba(37, 99, 235, 0.08) 1px, transparent 0);
+}
+
+.fade-up {
+  animation: fadeUp 0.5s ease-out both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

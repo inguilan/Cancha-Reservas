@@ -1,0 +1,77 @@
+# ─── Python / Django ────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Base de datos local SQLite
+*.sqlite3
+*.db
+
+# Archivos de medios subidos
+backend/media/
+
+# Variables de entorno
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Migraciones generadas automaticamente (opcional: comenta si quieres versionar)
+# backend/apps/*/migrations/*.py
+# !backend/apps/*/migrations/__init__.py
+
+# Coleccion de estaticos Django
+backend/staticfiles/
+
+# ─── Node / Next.js ──────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.cache/
+frontend/.turbo/
+
+# Variables de entorno frontend
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# ─── Docker ──────────────────────────────────────────────────────────────────
+.dockerignore
+
+# ─── Editores e IDEs ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ─── Sistema operativo ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# ─── Cobertura de tests ────────────────────────────────────────────────────────
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
